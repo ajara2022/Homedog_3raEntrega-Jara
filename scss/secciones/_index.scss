@@ -1,0 +1,82 @@
+body{
+
+    @extend %estiloFondo;
+
+    .container{
+
+        h1{
+            @extend %h1;
+        }
+        
+        h2{
+            @extend %h2;
+        }
+
+        .card, .card-img  {
+            border: none;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+
+            .card-img-overlay {
+                padding: 20px;
+            }
+
+            .card-title {
+                @include cardTitle(bold, 28px, 8px, $color-texto, 1.2rem);
+            }
+            .card-subtitle {
+                @include cardSubtitle();
+            }
+            .card-text {
+                @include cardText();
+            }
+        }
+
+        .btn {
+            @extend %estiloBtn;
+        }
+
+        .section2{
+
+            .card {
+                margin: 20px;
+                overflow: hidden;
+                }
+            
+        }
+
+        .section3{
+
+            .card {
+                background-color:#fff;
+                text-align:center;
+                transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+                cursor: pointer;
+
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+                }
+            }
+            .rounded-circle{
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+    }
+}
+
+/*
+
+Extend
+p {
+    @extend %estilosParrafo;
+}
+
+Mixin
+h2 {
+    @include fontStyle();
+}
+
+*/

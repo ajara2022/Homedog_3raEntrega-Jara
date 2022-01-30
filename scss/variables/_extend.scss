@@ -1,0 +1,43 @@
+%estilosParrafo {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+%h1 {
+    padding-bottom: 380px;
+    color: $color-texto;
+}
+
+%h2 {
+    font-weight:bold;
+    color: $color-texto;
+    padding-bottom:40px;
+    padding-top:40px;
+}
+
+%estiloBtn {
+    background-image: $background-btn;
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+
+
+    &:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+%estiloFondo {
+    background: rgb(237,211,204);
+    background: -moz-linear-gradient(180deg, rgba(237,211,204,1) 25%, rgba(220,218,219,1) 50%, rgba(215,204,198,1) 75%);
+    background: -webkit-linear-gradient(180deg, rgba(237,211,204,1) 25%, rgba(220,218,219,1) 50%, rgba(215,204,198,1) 75%);
+    background: linear-gradient(180deg, rgba(237,211,204,1) 25%, rgba(220,218,219,1) 50%, rgba(215,204,198,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edd3cc",endColorstr="#d7ccc6",GradientType=1); 
+}

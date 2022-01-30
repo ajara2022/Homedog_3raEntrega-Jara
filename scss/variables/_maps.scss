@@ -1,0 +1,16 @@
+$redesSociales: (
+    twitter: #51aff8,
+	facebook: #2956a3,
+    instagram: #ce1312,
+);
+
+@each $redes, $color in $redesSociales {
+    .#{$redes} {
+        color: #F15F79;
+        margin: 10px;
+        font-size:1.2rem;
+        &:hover {
+            color: $color;
+        }
+    }
+}
