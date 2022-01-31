@@ -1,0 +1,47 @@
+body{
+
+    @extend %estiloFondo;
+
+    .container{
+
+        padding: 10px;
+
+        .help-box 
+        
+        h2 {
+            @extend %h2;
+        }
+
+        .accordion{
+
+            .accordion-item{
+                background-color: transparent;
+                border: none;
+
+                .accordion-header{
+                    padding: 0;
+                }
+            }
+
+            .accordion-button{
+                border-radius: 30px;
+                background-image: linear-gradient(to right, #B24592 0%, #F15F79  51%, #B24592  100%);
+                color: white;
+                border-color: black;
+                margin-bottom: 10px;
+
+                &:focus{
+                    box-shadow: none;
+                    border: none;
+                    border-color:none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+        
+        
+
+
+    

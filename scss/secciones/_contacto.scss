@@ -1,0 +1,44 @@
+body{
+
+    @extend %estiloFondo;
+
+    .container{
+
+        padding: 10px;
+
+        .contact-box{
+
+            h2{
+                @extend %h2;
+            }
+
+      
+            .abs-center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+
+                .form {
+                    width: 700px;
+                    border-radius: 20px;
+                }
+
+                .form-control, .form-select {
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                    border-radius: 15px;
+                }
+
+                .form-control, .form-select, .form-check-input:focus {
+                    box-shadow: none;
+                    border: none
+                }
+            }
+        }
+    } 
+}
+
